@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Bold.woff2') format('woff2'),
+        url('Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+ :root{
+     --col-pushti:#FF7979;
+     --col-yashil:#38CC8B;
+     --col-ochyashil:#77E2B3;
+     --col-binafsha:#5E54A4;
+     --col-jigarrang:#3D3B48;
+     --col-oq:#ffffff;
+     --col-qora:#00000025;
+ }
+
+
+
+
+/* GENERAL */
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' ;
+    background-color: var(--col-oq);
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  main{
+      flex-grow: 1;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.site-main {
+
+
+}
+
+.site-section {
+    background-image: url(../img/rasm1x.png);
+    background-image: url(../img/rasm2x.png);
+    
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 77px 0px;
+}
+
+.wrapper__heading {
+    
+    max-width: 100%;
+    width: 525px;
+    margin-right: 45px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: var(--col-oq);
+    
+}
+
+.wrapper__heading-item {
+    
+font-weight: 700;
+font-size: 50px;
+line-height: 55px;
+
+}
+
+.wrapper__heading-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+}
+
+.wrapper__formula {
+
+}
+
+.wrapper__formula-link {
+    width: 540px;
+    display: block;
+    
+    margin-bottom: 24px;
+    text-decoration: none;
+    padding: 17px 112px;
+    
+font-weight: 700;
+font-size: 15px;
+line-height: 26px;
+color: var(--col-oq);
+    background-color: var(--col-binafsha);
+    box-shadow: 0px 8px 0px var(--col-qora);
+    border-radius: 10px;
+}
+
+.wrapper__formula-content {
+    max-width: 100%;
+    width: 540px;
+    margin: 0;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 8px 0px var(--col-qora);
+    border-radius: 10px;
+
+}
+
+.wrapper__formula-desc {
+    display: block;
+    
+    
+    
+}
+
+.wrapper__formula-item {
+    position: relative;
+    z-index: 1;
+    width: 460px;
+    display: block;
+    padding-right: 51px;
+    margin-bottom: 42px;
+    border-radius: 5px;
+    border: 1px solid;    
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+
+}
+.wrapper__formula-item:not(:focus):invalid {
+    border: 2px solid red;
+
+
+
+}
+.wrapper__formula-item-eror{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0px;    
+    font-style: italic;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    color: var(--col-pushti);
+}
+.wrapper__formula-submit {
+    width: 460px;
+    display: block;
+    background-color: var(--col-ochyashil);
+    box-shadow: inset 0px -4px 0px var(--col-qora);
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: var(--col-oq);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;    
+}
+
+.wrapper__formula-text {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 26px;
+    color: #BAB7D4;
+ }
+ @media only screen and (max-width: 786px) {
+     .wrapper__heading{
+         max-width: 100%;
+         width: 327px;
+         text-align: center;
+         margin-right: auto;
+         margin-left: auto;
+     }
+     .wrapper__heading-item{
+         width: 315px;
+        font-size: 28px;
+        line-height: 36px;
+     }
+     .wrapper__formula{
+         max-width: 100%;
+         width: 327px;
+         margin-left: auto;
+         margin-right: auto;
+     }
+     .wrapper{
+         
+         display: block;
+     }
+     .wrapper__formula-link{
+         width: 327px;
+         text-align: center;
+         
+        padding: 18px 67px;
+    }
+    .wrapper__formula-content{
+        width: 327px;
+        padding:24px ;
+        
+        
+    }
+    .wrapper__formula-item{
+        width: 279px;
+        margin-bottom: 16px;
+        padding-right: 30px;    
+        
+        
+    }
+    
+    .wrapper__formula-submit{
+        width: 279px;
+    }
+     
+ }
