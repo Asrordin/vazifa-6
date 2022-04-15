@@ -96,11 +96,6 @@ html {
     padding-right: 20px;
   }
 
-.site-main {
-
-
-}
-
 .site-section {
     background-image: url(../img/rasm1x.png);
     background-image: url(../img/rasm2x.png);
@@ -136,10 +131,6 @@ line-height: 55px;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-
-}
-
-.wrapper__formula {
 
 }
 
